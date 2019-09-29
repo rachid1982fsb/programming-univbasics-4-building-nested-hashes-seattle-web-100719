@@ -25,6 +25,8 @@ def monopoly_with_third_tier
     four_piece_owned: 200
   }
   monopoly_with_second_tier[:railroads][:names]={
+    reading_railroad: {},
+    
     
   }
 end

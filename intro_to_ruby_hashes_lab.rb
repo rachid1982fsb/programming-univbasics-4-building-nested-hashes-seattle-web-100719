@@ -19,7 +19,7 @@ def monopoly_with_third_tier
   # you built in the previous method. Run the tests. They will fail, but
   # they'll guide you in how to modify what you just did to have more
   # complexity.
-   hash={:railroads =>{:pieces => 4}}
+   hash=monopoly_with_second_tier
   hash[:railroads][:rent_in_dollars]={
     one_piece_owned: 25,
     two_piece_owned: 50,
@@ -32,6 +32,7 @@ def monopoly_with_third_tier
     b_and_o_railroad: {},
     shortline_railroad: {}
   }
+  hash
 end
 
 def monopoly_with_fourth_tier
@@ -43,8 +44,8 @@ def monopoly_with_fourth_tier
   hash[:railroads][:names][reading_railroad]["mortgage_value"]=["$100"]
   hash[:railroads][:names][pennsylvania_railroad]["mortgage_value"]=["$200"]
   hash[:railroads][:names][b_and_o_railroad]["mortgage_value"]=["$400"]
-  monopoly_with_third_tier[:railroads][:names][shortline_railroad]["mortgage_value"]=["$800"]
-  
+  hash[:railroads][:names][shortline_railroad]["mortgage_value"]=["$800"]
+  hash
 end
 
 puts monopoly_with_third_tier

@@ -54,5 +54,5 @@ def monopoly_with_fourth_tier
 end
 puts monopoly_with_second_tier
 puts monopoly_with_third_tier[:railroads][:names][reading_railroad]
-puts monopoly_with_fourth_tier
+#puts monopoly_with_fourth_tier
 

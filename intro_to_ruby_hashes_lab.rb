@@ -28,7 +28,8 @@ def monopoly_with_third_tier
     three_piece_owned: 100,
     four_piece_owned: 200
   }
-  have[:railroads][:names]={
+  
+  hash[:railroads][:names]={
     reading_railroad: {},
     pennsylvania_railroad: {},
     b_and_o_railroad: {},
